@@ -1,0 +1,44 @@
+# 常用基本Windows数据类型
+| 类型 | 描述 |
+|:----:|:----:|
+|BOOL|布尔型变量|
+|BYTE|字节类型（8位）|
+|CHAR|8比特字节（ANSI)|
+|CONST|常量，相当于标准C中的“const”关键字|
+|DWORD|32字节无符号整型数据|
+|DWORD32|32字节无符号整型数据|
+|DWORD64|64字节无符号整型数据|
+|FLOAT|浮点数据类型|
+|HANDLE|对象的句柄，最基本的句柄类型|
+|HICON|图标的句柄|
+|HINSTANCE|程序实例的句柄|
+|HKEY|注册表键的句柄|
+|HMODULE|模块的句柄|
+|HWND|窗口的句柄|
+|INT|32位符号整型数据类型|
+|INT_PTR|指向INT类型数据的指针类型|
+|INT32|32位符号整型|
+|INT64|64位符号整型|
+|LONG|32位符号整型，相当于C语言的标准数据类型long|
+|LONGLONG|64位符号整型|
+|LONG32|32位符号整型|
+|LONG64|64位符号整型|
+|LPARAM|消息的L参数|
+|WPARAM|消息的W参数|
+|LPCSTR|Windows（ANSI）字符串常量|
+|LPCTSTR|根据环境配置，如果定义了UNICODE宏，则是LPCWSTR类型，否则是LPCSTR类型|
+|LPCWSTR|UNICODE字符串常量|
+|LPDWORD|指向DWORD类型数据的指针|
+|LPSTR|Windows（ANSI）字符串变量|
+|LPTSTR|根据环境配置，如果定义了UNICODE宏，则是LPWSTR类型，否则是LPSTR类型|
+|LPWSTR|UNICODE字符串变量|
+|SHORT|无符号短整数（16位）|
+|SIZE_T|表示内存大小，以字节为单位，其最大值是CPU最大寻址范围|
+|TCHAR|如果定义了UNICODE，则为WCHAR，否则为CHAR|
+|UCHAR|无符号CHAR|
+|UINT|无符号INT|
+|ULONG|无符号LONG|
+|VOID|无类型，相当于标准C语言的void|
+|WCHAR|16位Unicode字符|
+|WINAPI|Windows API的行数调用方式|
+|WORD|16位无符号整型数据|
