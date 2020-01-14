@@ -1,4 +1,6 @@
-# 常用样式
+# CSS
+
+## 常用样式
 
 ### 垂直居中
 1.
@@ -28,6 +30,80 @@ children: {
   line-height: 300px;
 }
 ```
+
+## flex container
+### 容器的属性
+* flex-direction
+> 决定主轴的方向<br/>
+> row | row-reverse | column | column-reverse;
+* flex-wrap
+> 如何换行<br/>
+> nowrap | wrap | wrap-reverse;
+* flex-flow
+> flex-direction属性和flex-wrap属性的简写形式，默认值为row nowrap<br/>
+> <flex-direction> || <flex-wrap>
+* justify-content
+> 主轴上的对齐方式<br/>
+> flex-start | flex-end | center | space-between | space-around
+* align-items
+> 交叉轴上如何对齐<br/>
+> flex-start | flex-end | center | baseline | stretch
+* align-content
+> 多根轴线的对齐方式<br/>
+> 如果项目只有一根轴线，该属性不起作用<br/>
+> flex-start | flex-end | center | space-between | space-around | stretch
+### 项目的属性
+* order
+> 项目的排列顺序<br/>
+> 数值越小，排列越靠前<br/>
+> order: <integer>
+* flex-grow
+> 项目的放大比例<br/>
+> flex-grow: <number>; /* default 0 */
+* flex-shrink
+> 项目的缩小比例<br/>
+> flex-shrink: <number>; /* default 1 */
+* flex-basis
+> 在分配多余空间之前，项目占据的主轴空间（main size）<br/>
+> flex-basis: <length> | auto; /* default auto */
+* flex
+> flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto<br/>
+> flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]<br/>
+> 快捷值：auto (1 1 auto) 和 none (0 0 auto)。
+* align-self
+> 允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性<br/>
+> align-self: auto | flex-start | flex-end | center | baseline | stretch;
+
+### transform
+> 属性向元素应用 2D 或 3D 转换。该属性允许我们对元素进行旋转、缩放、移动或倾斜。<br/>
+> transform: none|transform-functions;
+|值	| 描述 |
+|--|--|
+|none	|定义不进行转换。|
+|matrix(n,n,n,n,n,n)	|定义 2D 转换，使用六个值的矩阵。|
+|matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)	|定义 3D 转换，使用 16 个值的 4x4 矩阵。|	
+|translate(x,y)	|定义 2D 转换。|
+|translate3d(x,y,z)	|定义 3D 转换。	|
+|translateX(x)	|定义转换，只是用 X 轴的值。|
+|translateY(y)	|定义转换，只是用 Y 轴的值。|
+|translateZ(z)	|定义 3D 转换，只是用 Z 轴的值。	|
+|scale(x,y)	|定义 2D 缩放转换。|
+|scale3d(x,y,z)	|定义 3D 缩放转换。	|
+|scaleX(x)	|通过设置 X 轴的值来定义缩放转换。|
+|scaleY(y)	|通过设置 Y 轴的值来定义缩放转换。|
+|scaleZ(z)	|通过设置 Z 轴的值来定义 3D 缩放转换。	|
+|rotate(angle)	|定义 2D 旋转，在参数中规定角度。|
+|rotate3d(x,y,z,angle)|	定义 3D 旋转。	|
+|rotateX(angle)	|定义沿着 X 轴的 3D 旋转。|
+|rotateY(angle)	|定义沿着 Y 轴的 3D 旋转。|	
+|rotateZ(angle)	|定义沿着 Z 轴的 3D 旋转。|
+|skew(x-angle,y-angle)	|定义沿着 X 和 Y 轴的 2D 倾斜转换。|
+|skewX(angle)	|定义沿着 X 轴的 2D 倾斜转换。|	
+|skewY(angle)	|定义沿着 Y 轴的 2D 倾斜转换。|	
+|perspective(n)	|为 3D 转换元素定义透视视图。|
+
+
+
 
 ### css 书写规范
 #### 书写顺序
